@@ -1,14 +1,15 @@
-<?php
-require 'vendor/autoload.php';
-
-use Dompdf\Dompdf;
-
-$dompdf = new Dompdf();
-$dompdf->loadHtml('Menggunakan Library DOMpdf untuk Membuat Report PDF dengan DOMPDF');
-
-$dompdf->setPaper('A4','landscape');
-
-$dompdf->render();
-
-$dompdf->stream('hasil_report.pdf')
-?>
+{
+    "name": "tugaspwpb/belajarcomposer",
+    "description": "Untuk Kebutuhan Belajar Composer",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Alfino Putra Laksana",
+            "email": "alfinoputralaksana294@gmail.com"
+        }
+    ],
+    "require": {
+        "dompdf/dompdf": "^0.8.5"
+    }
+}
